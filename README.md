@@ -18,6 +18,9 @@
 ## Description :page_with_curl:
 _A web application that allows the user to manage her stylists and their clients._
 
+## Schema
+
+
 ## Setup/Installation Requirements :triangular_ruler:
 
 * _Clone github repo: https://github.com/Gabeaya/VendorOrder.Solution.git_
@@ -25,8 +28,8 @@ _A web application that allows the user to manage her stylists and their clients
 * _Open in Vs code: code ._
 * _Run: dotnet restore VendorOrder_
 * _The line above will install necessary dependencies._
-* _Importing the dump file database:
-  - Open MySQL Workbench
+* _Importing the dump file database:_
+  - Open MySQL Workbench.
   - In the Navigator> Administration window, select Data Import/Restore.
   - In Import Options select Import from Self-Contained File.
   - Click the button with the two dots located to the right of the pathway.
@@ -34,7 +37,8 @@ _A web application that allows the user to manage her stylists and their clients
   - Select the dump file titled, "gabriel_ayala.sql."
   - Click Ok.
   - Navigate to the tab called Import Progress and click Start Import in the bottom right corner.
-  - Finally in the Navigator>Schemas tab, right click and select Refresh all to make the database appear._
+  - Finally in the Navigator>Schemas tab, right click and select Refresh all to make the database appear.
+  
 * _Next we will need a connection string: create a file within the main directory titled, "appsettings.json."_
 * _Add the following within our new file: {
     "ConnectionStrings": {
