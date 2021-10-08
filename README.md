@@ -20,7 +20,7 @@ _A web application that allows the user to manage her stylists and their clients
 
 ## Schema
 
-![Schema](HairSalon/assets/images/HairSalon_Schema)
+![Schema](HairSalon/assets/images/HairSalon_Schema.png)
 
 ## Setup/Installation Requirements :triangular_ruler:
 
