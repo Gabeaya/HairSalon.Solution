@@ -20,6 +20,7 @@ _A web application that allows the user to manage her stylists and their clients
 
 ## Schema
 
+![Schema](HairSalon/assets/images/HairSalon_Schema)
 
 ## Setup/Installation Requirements :triangular_ruler:
 
@@ -38,7 +39,7 @@ _A web application that allows the user to manage her stylists and their clients
   - Click Ok.
   - Navigate to the tab called Import Progress and click Start Import in the bottom right corner.
   - Finally in the Navigator>Schemas tab, right click and select Refresh all to make the database appear.
-  
+
 * _Next we will need a connection string: create a file within the main directory titled, "appsettings.json."_
 * _Add the following within our new file: {
     "ConnectionStrings": {
