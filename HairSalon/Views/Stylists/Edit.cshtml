@@ -10,13 +10,11 @@
 
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.StylistId)
+  @Html.HiddenFor(model => model.StylistId)
 
-    @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
+  @Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
 
-    @Html.LabelFor(model => model.Skills)
-    @Html.EditorFor(model => model.Skills)
-    <input type="submit" value="Save" />
+  <input type="submit" value="Save" />
 }
 <p>@Html.ActionLink("Back to list", "Index")</p>

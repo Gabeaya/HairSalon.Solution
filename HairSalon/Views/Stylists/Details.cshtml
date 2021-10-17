@@ -2,23 +2,27 @@
   Layout = "_Layout";
 }
 
-@using HairSalon.Models;
-@model HairSalon.Models.Stylist
+@model HairSalon.Models.Stylist;
 
-<h2>Stylist Details</h2>
+<h2>Stylist Details</h2> 
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
-<h3>@Html.DisplayNameFor(model => model.Skills): @Html.DisplayFor(model => model.Skills)</h3>
-<hr />
-<h2>Clients under @Html.DisplayFor(model => model.Name)</h3></h2>
-<ul>
-  @foreach (var Clients in Model.Clients)
+
+@if(@Model.JoinEntities.Count == 0)
+{
+  <p>This stylist does not contain any clients</p>
+}
+else
+{
+  <h4>Clients the stylist contains:</h4>
+  <ul>
+  @foreach(var join in Model.JoinEntities)
   {
-    <h3>@Clients.Name</h3>
+    <li>@join.Client.Name</li>
   }
-</ul>
-<p>@Html.ActionLink("Back to list", "Index")</p> 
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p> 
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p> 
-<p>@Html.ActionLink("Add clients", "Create", "Clients")</p>
-<p>@Html.ActionLink("List clients", "Index", "Clients")</p>
+  </ul>
+}
+
+<p>@Html.ActionLink("Back to Stylists", "Index")</p>
+<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p></h3>
